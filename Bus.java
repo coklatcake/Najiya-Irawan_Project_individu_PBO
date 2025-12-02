@@ -82,4 +82,14 @@ public class Bus {
         return false;
     }
 
+     private String listPenumpang(ArrayList<Penumpang> daftar) {
+        if (daftar.isEmpty()) return "<kosong>";
+        String s = "";
+        for (Penumpang p : daftar) {
+            s += p.getNama() + ", ";
+        }
+        return s;
+    }
+
+
 
