@@ -49,5 +49,13 @@ public class TestBus {
                     }
                     break;
 
+                 case 3:
+                    System.out.println(bus.toString());
+                    break;
+
+                case 4:
+                    jalan = false;
+                    break;
+
                 
 
