@@ -7,3 +7,13 @@ public class TestBus {
         Bus bus = new Bus();
 
         boolean jalan = true;
+
+        while (jalan) {
+            System.out.println("\n===== SISTEM BUS KOTA =====");
+            System.out.println("1. Naikkan Penumpang");
+            System.out.println("2. Turunkan Penumpang");
+            System.out.println("3. Lihat Kondisi Bus");
+            System.out.println("4. Keluar");
+            System.out.print("Pilihan: ");
+            int pilih = sc.nextInt();
+            sc.nextLine();
