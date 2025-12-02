@@ -8,3 +8,13 @@ public class Bus {
 
     private final int TARIF = 2000;
     private int totalUangMasuk = 0;
+
+     public Bus() {
+        kursiReguler = new ArrayList<>();
+        kursiPrioritas = new ArrayList<>();
+        areaBerdiri = new ArrayList<>();
+    }
+
+    public int totalPenumpang() {
+        return kursiReguler.size() + kursiPrioritas.size() + areaBerdiri.size();
+    }
