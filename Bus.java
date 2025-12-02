@@ -18,3 +18,13 @@ public class Bus {
     public int totalPenumpang() {
         return kursiReguler.size() + kursiPrioritas.size() + areaBerdiri.size();
     }
+
+     public boolean bolehMasuk(Penumpang p) {
+        return totalPenumpang() < 40 && p.getSaldo() >= TARIF;
+    }
+
+    public boolean naik(Penumpang p) {
+
+        if (!bolehMasuk(p)) {
+            return false;
+        }
