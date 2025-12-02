@@ -33,9 +33,21 @@ public class TestBus {
                     Penumpang baru = new Penumpang(nm, u, h);
 
                     if (bus.naik(baru)) {
-                        System.out.println("✔ Penumpang berhasil naik.");
+                        System.out.println(" Penumpang berhasil naik.");
                     } else {
                         System.out.println(" Tidak bisa naik! (Bus penuh atau saldo kurang)");
                     }
                     break;
+
+                 case 2:
+                    System.out.print("Nama penumpang turun: ");
+                    String turun = sc.nextLine();
+                    if (bus.turun(turun)) {
+                        System.out.println(" Penumpang telah turun.");
+                    } else {
+                        System.out.println(" Penumpang tidak ditemukan.");
+                    }
+                    break;
+
+                
 
