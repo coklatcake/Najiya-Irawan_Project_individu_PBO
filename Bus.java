@@ -91,5 +91,17 @@ public class Bus {
         return s;
     }
 
+    @Override
+    public String toString() {
+        return  "-------- DATA BUS --------\n"
+                + "Kursi Reguler   : " + listPenumpang(kursiReguler) + "\n"
+                + "Kursi Prioritas : " + listPenumpang(kursiPrioritas) + "\n"
+                + "Berdiri         : " + listPenumpang(areaBerdiri) + "\n"
+                + "Total Penumpang : " + totalPenumpang() + "\n"
+                + "Pendapatan Hari : " + totalUangMasuk + "\n"
+                + "--------------------------";
+    }
+}
+
 
 
