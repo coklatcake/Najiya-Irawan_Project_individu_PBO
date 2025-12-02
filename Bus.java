@@ -71,3 +71,15 @@ public class Bus {
             }
         }
 
+          // berdiri
+        for (Penumpang p : areaBerdiri) {
+            if (p.getNama().equalsIgnoreCase(nama)) {
+                areaBerdiri.remove(p);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
