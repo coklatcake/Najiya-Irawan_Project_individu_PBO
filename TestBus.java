@@ -26,3 +26,16 @@ public class TestBus {
                     System.out.print("Usia: ");
                     int u = sc.nextInt();
                     sc.nextLine();
+
+                System.out.print("Hamil? (y/n): ");
+                    boolean h = sc.nextLine().equalsIgnoreCase("y");
+
+                    Penumpang baru = new Penumpang(nm, u, h);
+
+                    if (bus.naik(baru)) {
+                        System.out.println("✔ Penumpang berhasil naik.");
+                    } else {
+                        System.out.println(" Tidak bisa naik! (Bus penuh atau saldo kurang)");
+                    }
+                    break;
+
