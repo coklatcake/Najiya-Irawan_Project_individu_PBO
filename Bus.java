@@ -47,3 +47,18 @@ public class Bus {
                 areaBerdiri.add(p);
             }
         }
+
+        p.bayarOngkos(TARIF);
+        totalUangMasuk += TARIF;
+
+        return true;
+    }
+
+    public boolean turun(String nama) {
+        // prioritas
+        for (Penumpang p : kursiPrioritas) {
+            if (p.getNama().equalsIgnoreCase(nama)) {
+                kursiPrioritas.remove(p);
+                return true;
+            }
+        }
