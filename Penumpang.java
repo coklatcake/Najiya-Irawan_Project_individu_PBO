@@ -39,3 +39,10 @@ public Penumpang(String nama, int usia, boolean kondisiHamil) {
     public boolean termasukPrioritas() {
         return usia > 60 || usia < 10 || kondisiHamil;
     }
+
+    
+    @Override
+    public String toString() {
+        return nama + " | usia: " + usia + " | saldo: " + saldoKartu;
+    }
+}
