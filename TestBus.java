@@ -17,3 +17,12 @@ public class TestBus {
             System.out.print("Pilihan: ");
             int pilih = sc.nextInt();
             sc.nextLine();
+
+        switch (pilih) {
+                case 1:
+                    System.out.print("Nama penumpang: ");
+                    String nm = sc.nextLine();
+
+                    System.out.print("Usia: ");
+                    int u = sc.nextInt();
+                    sc.nextLine();
