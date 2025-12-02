@@ -62,3 +62,12 @@ public class Bus {
                 return true;
             }
         }
+
+         // reguler
+        for (Penumpang p : kursiReguler) {
+            if (p.getNama().equalsIgnoreCase(nama)) {
+                kursiReguler.remove(p);
+                return true;
+            }
+        }
+
