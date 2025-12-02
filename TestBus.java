@@ -57,5 +57,13 @@ public class TestBus {
                     jalan = false;
                     break;
 
+                default:
+                    System.out.println("Pilihan salah!");
+            }
+        }
+        sc.close();
+    }
+}
+
                 
 
