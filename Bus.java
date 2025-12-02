@@ -28,3 +28,22 @@ public class Bus {
         if (!bolehMasuk(p)) {
             return false;
         }
+
+         boolean prioritas = p.termasukPrioritas();
+
+        // Aturan kursi
+        if (prioritas) {
+            if (kursiPrioritas.size() < 4) {
+                kursiPrioritas.add(p);
+            } else if (kursiReguler.size() < 16) {
+                kursiReguler.add(p);
+            } else {
+                areaBerdiri.add(p);
+            }
+        } else { 
+            if (kursiReguler.size() < 16) {
+                kursiReguler.add(p);
+            } else {
+                areaBerdiri.add(p);
+            }
+        }
